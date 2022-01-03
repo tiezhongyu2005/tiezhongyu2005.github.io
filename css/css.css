@@ -47,7 +47,7 @@ position: relative;
 .inputtext{width:180px; height:29px; border:0; line-height:32px; text-indent:5px; float:left;}
 .searchbtn{width:35px; height:29px; background: url(../images/searchbtn.jpg) no-repeat; cursor:pointer; float:right;}
 .fwl{text-align:center;}
-.menu{width:90%; float:left;}
+.menu{width:98%; float:left;}
 .menu li{float: left; line-height:63px; }
 .menu .item a{font-size:16px; color:#FFF; padding:0 12px; display:block;}
 .menu .item a:hover{ background:#df6b57;}
@@ -215,10 +215,10 @@ position: relative;
 .w700{width:700px;}
 #nav { margin: 0; padding: 0; list-style: none;  padding-right: 0; }
 #nav li { float: left; display: block; background: none; position: relative; z-index: 999; margin: 0 1px; }
-#nav li a { display: block; padding: 0; font-size:16px; line-height:63px; text-decoration: none; color: #ffffff; zoom: 1; border-left: 1px solid transparent; border-right: 1px solid transparent; padding: 0px 30.4px; }
+#nav li a { display: block; padding: 0; font-size:16px; line-height:63px; text-decoration: none; color: #ffffff; zoom: 1; border-left: 1px solid transparent; border-right: 1px solid transparent; padding: 0px 0px; }
 #nav li a:hover, #nav li a.hov { background-color: #df6b57; color: #ffffff; }
 #nav ul { position: absolute; left: 0; display: none; margin: 0; padding:0; list-style: none;  padding-bottom: 3px;  background-color: #2a2a2a; }
-#nav ul li { width: 160px; float: left; border-top: 1px solid #3d3d3d; text-align: left; }
+#nav ul li { width: 100px; float: left; border-top: 1px solid #3d3d3d; text-align: left; }
 #nav ul li:hover { border-left: 0px solid transparent; border-right: 0px solid transparent; }
 #nav ul a { display: block; height: 20px; line-height: 20px; padding: 8px 5px; color: #fff; border-bottom: 1px solid transparent; text-transform: uppercase; color: #fff; font-weight: normal; }
 #nav ul a:hover { text-decoration: none; border-right-color: transparent; border-left-color: transparent; background: transparent; color: #fff;   background-color: #df6b57;}
