@@ -1,6 +1,6 @@
 
 body{PADDING-RIGHT
-:0px;PADDING-LEFT:0px;FONT-SIZE:14px;PADDING-BOTTOM:0px;MARGIN:0px;PADDING-TOP:0px;FONT-FAMILY:"å¾®è½¯é›…é»‘","å®‹ä½“",Verdana, Arial, Helvetica, sans-serif;
+:0px;PADDING-LEFT:0px;FONT-SIZE:14px;PADDING-BOTTOM:0px;MARGIN:0px;PADDING-TOP:0px;FONT-FAMILY:Verdana, Arial, Helvetica, sans-serif;
   color:#000; 
  }
 
@@ -198,7 +198,7 @@ position: relative;
 	cursor:pointer;
 	}
 .son_ul2 a{display:block; font-size:14px; padding:0 12px; color:#222222;}
-.son_ul2 a:hover{background:#df6b57; color:#FFF;}}
+.son_ul2 a:hover{background:#df6b57; color:#FFF;}
 .son_ul2 li p{
 	display:inline;
 	}			
@@ -223,3 +223,38 @@ position: relative;
 #nav ul a { display: block; height: 20px; line-height: 20px; padding: 8px 5px; color: #fff; border-bottom: 1px solid transparent; text-transform: uppercase; color: #fff; font-weight: normal; }
 #nav ul a:hover { text-decoration: none; border-right-color: transparent; border-left-color: transparent; background: transparent; color: #fff;   background-color: #df6b57;}
 .bannerside{width:100%; height:410px; margin:0 auto;}
+
+
+/* 回到顶部实现代码的css */
+.back-to-top {
+	display: none;
+	/* 默认是隐藏的，这样在第一屏才不显示 */
+	position: fixed;
+	/* 位置是固定的 */
+	bottom:300px;
+	/* 显示在页面底部 */
+	right: 30px;
+	/* 显示在页面的右边 */
+	z-index: 99;
+	/* 确保不被其他功能覆盖 */
+	border: 1px solid #5cb85c;
+	/* 显示边框 */
+	outline: none;
+	/* 不显示外框 */
+	background-color: #fff;
+	/* 设置背景背景颜色 */
+	color: #5cb85c;
+	/* 设置文本颜色 */
+	cursor: pointer;
+	/* 鼠标移到按钮上显示手型 */
+	padding: 10px 15px 15px 15px;
+	/* 增加一些内边距 */
+	border-radius: 10px;
+	/* 增加圆角 */
+  }
+
+  .back-to-top:hover {
+	background-color: #5cb85c;
+	/* 鼠标移上去时，反转颜色 */
+	color: #fff;
+  }

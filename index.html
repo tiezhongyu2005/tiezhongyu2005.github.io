@@ -115,6 +115,28 @@
     </div>
   </div>
   <div id="rightside">
+    <button class="js-back-to-top back-to-top" title="回到头部">︽</button>
+    <!-- 回到头部实现代码 -->
+    <script>
+      $(function () {
+        var $win = $(window);
+        var $backToTop = $('.js-back-to-top');
+        // 当用户滚动到离顶部100像素时，展示回到顶部按钮
+        $win.scroll(function () {
+          if ($win.scrollTop() > 100) {
+            $backToTop.show();
+          } else {
+            $backToTop.hide();
+          }
+        });
+        // 当用户点击按钮时，通过动画效果返回头部
+        $backToTop.click(function () {
+          $('html, body').animate({
+            scrollTop: 0
+          }, 200);
+        });
+      });
+    </script>
     <div class="nav">
       <div class="menu">
         <div style="max-width:98%">
@@ -126,7 +148,7 @@
               }
             </style>
             <li>
-              <a href="" style="background-color: #df6b57;"> 首页</a>
+              <a href="#" style="background-color: #df6b57;"> 首页</a>
             </li>
             <li>
               <a href="https://faculty.csu.edu.cn/michael_x_zhou/zh_CN/article/100046/list/index.htm"> 成果展示</a>
@@ -451,13 +473,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84932.htm#tdcy"><img
-                    src="images/00/21/fangshuang.jpg" id="u_u21_84932pic" class="student_image" /></a>
+                <a href="team_member/detail.html?fangshuang"><img src="images/00/21/fangshuang.jpg" id="u_u21_84932pic"
+                    class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84932.htm#tdcy"
-                style="color:#000; margin-left:12px;"><strong>方双</strong></a>
+              <a href="team_member/detail.html?fangshuang" style="color:#000; margin-left:12px;"><strong>方双</strong></a>
             </td>
           </tr>
           <tr>
@@ -473,12 +494,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84929.htm#tdcy"><img
+                <a href="team_member/detail.html?duyangyi"><img
                     src="images/00/21/duyangyi.jpg" id="u_u21_84929pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84929.htm#tdcy"
+              <a href="team_member/detail.html?duyangyi"
                 style="color:#000; margin-left:12px;"><strong>杜洋伊</strong></a>
             </td>
           </tr>
@@ -495,12 +516,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84930.htm#tdcy"><img
+                <a href="team_member/detail.html?hujiaming"><img
                     src="images/00/21/hujiaming.jpg" id="u_u21_84930pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84930.htm#tdcy"
+              <a href="team_member/detail.html?hujiaming"
                 style="color:#000; margin-left:12px;"><strong>胡佳铭</strong></a>
             </td>
           </tr>
@@ -517,12 +538,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84931.htm#tdcy"><img
+                <a href="team_member/detail.html?tanwan"><img
                     src="images/00/21/tanwan.jpg" id="u_u21_84931pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84931.htm#tdcy"
+              <a href="team_member/detail.html?tanwan"
                 style="color:#000; margin-left:12px;"><strong>谭琬</strong></a>
             </td>
           </tr>
@@ -539,12 +560,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84933.htm#tdcy"><img
+                <a href="team_member/detail.html?wangzheng"><img
                     src="images/00/21/wangzheng.png" id="u_u21_84933pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84933.htm#tdcy"
+              <a href="team_member/detail.html?wangzheng"
                 style="color:#000; margin-left:12px;"><strong>王正</strong></a>
             </td>
           </tr>
@@ -561,12 +582,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83488.htm#tdcy"><img
+                <a href="team_member/detail.html?liming"><img
                     src="images/00/20/liming.jpg" id="u_u21_83488pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83488.htm#tdcy"
+              <a href="team_member/detail.html?liming"
                 style="color:#000; margin-left:12px;"><strong>李明</strong></a>
             </td>
           </tr>
@@ -583,12 +604,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83487.htm#tdcy"><img
+                <a href="team_member/detail.html?sunyan"><img
                     src="images/00/20/sunyan.jpg" id="u_u21_83487pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83487.htm#tdcy"
+              <a href="team_member/detail.html?sunyan"
                 style="color:#000; margin-left:12px;"><strong>孙燕</strong></a>
             </td>
           </tr>
@@ -608,12 +629,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83486.htm#tdcy"><img
+                <a href="team_member/detail.html?tianjituo"><img
                     src="images/00/20/tianjituo.jpg" id="u_u21_83486pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83486.htm#tdcy"
+              <a href="team_member/detail.html?tianjituo"
                 style="color:#000; margin-left:12px;"><strong>田寄托</strong></a>
             </td>
           </tr>
@@ -636,12 +657,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84755.htm#tdcy"><img
+                <a href="team_member/detail.html?linfeifan"><img
                     src="images/00/20/linfeifan.jpg" id="u_u21_84755pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/84755.htm#tdcy"
+              <a href="team_member/detail.html?linfeifan"
                 style="color:#000; margin-left:12px;"><strong>林飞凡</strong></a>
             </td>
           </tr>
@@ -658,12 +679,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83485.htm#tdcy"><img
+                <a href="team_member/detail.html?wangzeyu"><img
                     src="images/00/20/wangzeyu.jpg" id="u_u21_83485pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83485.htm#tdcy"
+              <a href="team_member/detail.html?wangzeyu"
                 style="color:#000; margin-left:12px;"><strong>王泽宇</strong></a>
             </td>
           </tr>
@@ -684,12 +705,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83484.htm#tdcy"><img
+                <a href="team_member/detail.html?gaoyuan"><img
                     src="images/00/19/gaoyuan.jpg" id="u_u21_83484pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83484.htm#tdcy"
+              <a href="team_member/detail.html?gaoyuan"
                 style="color:#000; margin-left:12px;"><strong>高媛</strong></a>
             </td>
           </tr>
@@ -710,12 +731,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83483.htm#tdcy"><img
+                <a href="team_member/detail.html?gengchuanyu"><img
                     src="images/00/19/gengchaunyu.jpg" id="u_u21_83483pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83483.htm#tdcy"
+              <a href="team_member/detail.html?gengchuanyu"
                 style="color:#000; margin-left:12px;"><strong>耿传玉</strong></a>
             </td>
           </tr>
@@ -732,12 +753,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83482.htm#tdcy"><img
+                <a href="team_member/detail.html?hejingyi"><img
                     src="images/00/19/hejingyi.jpg" id="u_u21_83482pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/83482.htm#tdcy"
+              <a href="team_member/detail.html?hejingyi"
                 style="color:#000; margin-left:12px;"><strong>贺婧怡</strong></a>
             </td>
           </tr>
@@ -759,12 +780,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79144.htm#tdcy"><img
+                <a href="team_member/detail.html?zhangyunxiang"><img
                     src="images/00/18/zhangyunxiang.jpg" id="u_u21_79144pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79144.htm#tdcy"
+              <a href="team_member/detail.html?zhangyunxiang"
                 style="color:#000; margin-left:12px;"><strong>张云祥</strong></a>
             </td>
           </tr>
@@ -784,12 +805,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79145.htm#tdcy"><img
+                <a href="team_member/detail.html?wangxiangyue"><img
                     src="images/00/18/wangxiangyue.jpg" id="u_u21_79145pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79145.htm#tdcy"
+              <a href="team_member/detail.html?wangxiangyue"
                 style="color:#000; margin-left:12px;"><strong>王湘月</strong></a>
             </td>
           </tr>
@@ -810,12 +831,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79143.htm#tdcy"><img
+                <a href="team_member/detail.html?xuchongchong"><img
                     src="images/00/18/xuchongchong.jpg" id="u_u21_79143pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79143.htm#tdcy"
+              <a href="team_member/detail.html?xuchongchong"
                 style="color:#000; margin-left:12px;"><strong>徐冲冲</strong></a>
             </td>
           </tr>
@@ -835,12 +856,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79139.htm#tdcy"><img
+                <a href="team_member/detail.html?wangqian"><img
                     src="images/00/17/wangqian.jpg" id="u_u21_79139pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79139.htm#tdcy"
+              <a href="team_member/detail.html?wangqian"
                 style="color:#000; margin-left:12px;"><strong>王启安</strong></a>
             </td>
           </tr>
@@ -853,7 +874,7 @@
                 with noisy labels[J].&nbsp;Minerals Engineering, 2020,&nbsp;<a class="doi"
                   href="https://doi.org/10.1016/j.mineng.2020.106201" target="_blank"
                   title="Persistent link using digital object identifier"
-                  style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; color: rgb(12, 125, 187); word-break: break-word; font-family: NexusSans, Arial, Helvetica, &quot;Lucida Sans Unicode&quot;, &quot;Microsoft Sans Serif&quot;, &quot;Segoe UI Symbol&quot;, STIXGeneral, &quot;Cambria Math&quot;, &quot;Arial Unicode MS&quot;, sans-serif; font-size: 14px;">https://doi.org/10.1016/j.mineng.2020.106201</a>
+                  style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; color: rgb(12, 125, 187); word-break: break-word; font-size: 14px;">https://doi.org/10.1016/j.mineng.2020.106201</a>
               </p>&nbsp;&nbsp;</p>
             </td>
           </tr>
@@ -864,12 +885,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79140.htm#tdcy"><img
+                <a href="team_member/detail.html?longjianpeng"><img
                     src="images/00/17/longjianpeng.JPG" id="u_u21_79140pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79140.htm#tdcy"
+              <a href="team_member/detail.html?longjianpeng"
                 style="color:#000; margin-left:12px;"><strong>龙建朋</strong></a>
             </td>
           </tr>
@@ -888,12 +909,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79141.htm#tdcy"><img
+                <a href="team_member/detail.html?yangke"><img
                     src="images/00/17/yangke.jpg" id="u_u21_79141pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79141.htm#tdcy"
+              <a href="team_member/detail.html?yangke"
                 style="color:#000; margin-left:12px;"><strong>杨珂</strong></a>
             </td>
           </tr>
@@ -912,12 +933,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79142.htm#tdcy"><img
+                <a href="team_member/detail.html?zhangrundong"><img
                     src="images/00/17/zhangrundong.jpg" id="u_u21_79142pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79142.htm#tdcy"
+              <a href="team_member/detail.html?zhangrundong"
                 style="color:#000; margin-left:12px;"><strong>张润东</strong></a>
             </td>
           </tr>
@@ -942,12 +963,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79138.htm#tdcy"><img
+                <a href="team_member/detail.html?zhoujiajia"><img
                     src="images/00/16/zhoujiajia.jpg" id="u_u21_79138pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79138.htm#tdcy"
+              <a href="team_member/detail.html?zhoujiajia"
                 style="color:#000; margin-left:12px;"><strong>周佳佳</strong></a>
             </td>
           </tr>
@@ -966,12 +987,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79137.htm#tdcy"><img
+                <a href="team_member/detail.html?huangmiao"><img
                     src="images/00/16/huangmiao.jpg" id="u_u21_79137pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79137.htm#tdcy"
+              <a href="team_member/detail.html?huangmiao"
                 style="color:#000; margin-left:12px;"><strong>黄淼</strong></a>
             </td>
           </tr>
@@ -992,12 +1013,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79136.htm#tdcy"><img
+                <a href="team_member/detail.html?zhangfengxue"><img
                     src="images/00/zhangfengxue.JPG" id="u_u21_79136pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79136.htm#tdcy"
+              <a href="team_member/detail.html?zhangfengxue"
                 style="color:#000; margin-left:12px;"><strong>张凤雪</strong></a>
             </td>
           </tr>
@@ -1019,12 +1040,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79135.htm#tdcy"><img
+                <a href="team_member/detail.html?hanjie"><img
                     src="images/00/hanjie.JPG" id="u_u21_79135pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79135.htm#tdcy"
+              <a href="team_member/detail.html?hanjie"
                 style="color:#000; margin-left:12px;"><strong>韩洁</strong></a>
             </td>
           </tr>
@@ -1058,12 +1079,12 @@
             <td width="130px" height="100px" rowspan="2" valign="top">
               <div
                 style="overflow:hidden; position:relative; display:table-cell; text-align:center; vertical-align:middle;width:130px;height:100px;border:1px solid #d3dce3;padding:2px;">
-                <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79134.htm#tdcy"><img
+                <a href="team_member/detail.html?huangzhaoke"><img
                     src="images/00/huangzhaoke.jpg" id="u_u21_79134pic" class="student_image" /></a>
               </div>
             </td>
             <td height="25px" valign="top">
-              <a href="http://faculty.csu.edu.cn/michael_x_zhou/zh_CN/tdcy/25848/content/79134.htm#tdcy"
+              <a href="team_member/detail.html?huangzhaoke"
                 style="color:#000; margin-left:12px;"><strong>黄兆可</strong></a>
             </td>
           </tr>
@@ -1128,6 +1149,7 @@
     }
     siteTime();
   </script>
+
 </body>
 
 </html>

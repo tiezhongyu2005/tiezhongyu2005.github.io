@@ -125,6 +125,27 @@
         </div>
     </div>
     <div id="rightside">
+        <button class="js-back-to-top back-to-top" title="回到头部">︽</button>
+        <script>
+            $(function () {
+                var $win = $(window);
+                var $backToTop = $('.js-back-to-top');
+                // 当用户滚动到离顶部100像素时，展示回到顶部按钮
+                $win.scroll(function () {
+                    if ($win.scrollTop() > 100) {
+                        $backToTop.show();
+                    } else {
+                        $backToTop.hide();
+                    }
+                });
+                // 当用户点击按钮时，通过动画效果返回头部
+                $backToTop.click(function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 200);
+                });
+            });
+        </script>
         <div class="nav">
             <div class="menu">
                 <div style="max-width:98%">
@@ -170,7 +191,7 @@
                                 著作专利</a>
                         </li>
                         <li>
-                            <a href="" style="background-color: #df6b57;">
+                            <a href="#" style="background-color: #df6b57;">
                                 团队成员</a>
                         </li>
                         <li>
@@ -299,58 +320,58 @@
             </div>
 
             <div style="display: flex; flex-wrap: wrap; text-align: center;margin-left: 20px;">
-                <div><a href=""><img src="../images/00/21/fangshuang.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?fangshuang"><img src="../images/00/21/fangshuang.jpg" alt="" class="studentimgsize"> <br>
                         方双</a></div>
-                <div><a href=""><img src="../images/00/21/duyangyi.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?duyangyi"><img src="../images/00/21/duyangyi.jpg" alt="" class="studentimgsize"> <br>
                         杜洋伊</a></div>
-                <div><a href=""><img src="../images/00/21/hujiaming.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?hujiaming"><img src="../images/00/21/hujiaming.jpg" alt="" class="studentimgsize"> <br>
                         胡佳铭</a></div>
-                <div><a href=""><img src="../images/00/21/tanwan.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?tanwan"><img src="../images/00/21/tanwan.jpg" alt="" class="studentimgsize"> <br>
                         谭婉</a></div>
-                <div><a href=""><img src="../images/00/21/wangzheng.png" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?wangzheng"><img src="../images/00/21/wangzheng.png" alt="" class="studentimgsize"> <br>
                         王正</a></div>
-                <div><a href=""><img src="../images/00/20/liming.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?liming"><img src="../images/00/20/liming.jpg" alt="" class="studentimgsize"> <br>
                         李明</a></div>
-                <div><a href=""><img src="../images/00/20/sunyan.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?sunyan"><img src="../images/00/20/sunyan.jpg" alt="" class="studentimgsize"> <br>
                         孙燕</a></div>
-                <div><a href=""><img src="../images/00/20/tianjituo.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?tianjituo"><img src="../images/00/20/tianjituo.jpg" alt="" class="studentimgsize"> <br>
                         田寄托</a></div>
-                <div><a href=""><img src="../images/00/20/linfeifan.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?linfeifan"><img src="../images/00/20/linfeifan.jpg" alt="" class="studentimgsize"> <br>
                         林飞凡</a></div>
-                <div><a href=""><img src="../images/00/20/wangzeyu.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?wangzeyu"><img src="../images/00/20/wangzeyu.jpg" alt="" class="studentimgsize"> <br>
                         王泽宇</a></div>
-                <div><a href=""><img src="../images/00/19/gaoyuan.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?gaoyuan"><img src="../images/00/19/gaoyuan.jpg" alt="" class="studentimgsize"> <br>
                         高媛</a></div>
-                <div><a href=""><img src="../images/00/19/gengchaunyu.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?gengchuanyu"><img src="../images/00/19/gengchaunyu.jpg" alt="" class="studentimgsize"> <br>
                         耿传玉</a></div>
-                <div><a href=""><img src="../images/00/19/hejingyi.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?hejingyi"><img src="../images/00/19/hejingyi.jpg" alt="" class="studentimgsize"> <br>
                         贺婧怡</a></div>
-                <div><a href=""><img src="../images/00/18/zhangyunxiang.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?zhangyunxiang"><img src="../images/00/18/zhangyunxiang.jpg" alt="" class="studentimgsize"> <br>
                         张云祥</a></div>
-                <div><a href=""><img src="../images/00/18/wangxiangyue.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?wangxiangyue"><img src="../images/00/18/wangxiangyue.jpg" alt="" class="studentimgsize"> <br>
                         王湘月</a></div>
-                <div><a href=""><img src="../images/00/18/xuchongchong.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?xuchongchong"><img src="../images/00/18/xuchongchong.jpg" alt="" class="studentimgsize"> <br>
                         徐冲冲</a></div>
-                <div><a href=""><img src="../images/00/17/wangqian.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?wangqian"><img src="../images/00/17/wangqian.jpg" alt="" class="studentimgsize"> <br>
                         王启安</a></div>
-                <div><a href=""><img src="../images/00/17/longjianpeng.JPG" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?longjianpeng"><img src="../images/00/17/longjianpeng.JPG" alt="" class="studentimgsize"> <br>
                         龙建朋</a></div>
-                <div><a href=""><img src="../images/00/17/yangke.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?yangke"><img src="../images/00/17/yangke.jpg" alt="" class="studentimgsize"> <br>
                         杨珂</a></div>
-                <div><a href=""><img src="../images/00/17/zhangrundong.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?zhangrundong"><img src="../images/00/17/zhangrundong.jpg" alt="" class="studentimgsize"> <br>
                         张润东</a></div>
-                <div><a href=""><img src="../images/00/16/zhoujiajia.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?zhoujiajia"><img src="../images/00/16/zhoujiajia.jpg" alt="" class="studentimgsize"> <br>
                         周佳佳</a></div>
-                <div><a href=""><img src="../images/00/16/huangmiao.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?huangmiao"><img src="../images/00/16/huangmiao.jpg" alt="" class="studentimgsize"> <br>
                         黄淼</a></div>
-                <div><a href=""><img src="../images/00/zhangfengxue.JPG" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?zhangfengxue"><img src="../images/00/zhangfengxue.JPG" alt="" class="studentimgsize"> <br>
                         张凤雪</a></div>
-                <div><a href=""><img src="../images/00/hanjie.JPG" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?hanjie"><img src="../images/00/hanjie.JPG" alt="" class="studentimgsize"> <br>
                         韩洁</a></div>
-                <div><a href=""><img src="../images/00/huangzhaoke.jpg" alt="" class="studentimgsize"> <br>
+                <div><a href="detail.html?huangzhaoke"><img src="../images/00/huangzhaoke.jpg" alt="" class="studentimgsize"> <br>
                         黄兆可</a></div>
-                <div><a href=""><img src="../images/00/ketizujingshen.png" alt="" class="ketizujingshen"> <br>
-                        课题组精神</a></div>
+                <div><img src="../images/00/ketizujingshen.png" alt="" class="ketizujingshen"> <br>
+                        课题组精神</div>
 
             </div>
         </div>
