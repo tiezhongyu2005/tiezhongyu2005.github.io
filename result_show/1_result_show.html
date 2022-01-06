@@ -35,37 +35,26 @@
             background-color: #f0f0f0;
         }
 
-        .studentimgsize {
-            width: 114px;
-            height: 160px;
-            margin: 20px 50px;
+        .studentimgsizedetail {
+            width: 230px;
+            height: 322px;
+
         }
 
         .ketizujingshen {
             width: 200px;
             height: 160px;
             margin: 20px 0px;
-
         }
 
-        .tbDatalist {
+        .zhengwenduanluo {
+            margin: 10px 40px;
+            font-size: 16px;
+            line-height: 35px;
+        }
+
+        .img_result_show {
             width: 100%;
-        }
-
-        .tbDatalist tr {
-            height: 40px;
-            width: 100%;
-        }
-
-        .tbDatalist td {
-            width: 100%;
-            margin-left: 40px;
-            padding-left: 40px;
-        }
-
-
-        .tbDatalist tr:hover {
-            background: rgb(190, 189, 189);
         }
     </style>
 
@@ -180,7 +169,7 @@
                             <a href="../index.html"> 首页</a>
                         </li>
                         <li>
-                            <a href="#" style="background-color: #df6b57;">
+                            <a href="../result_show/result_show.html"  style="background-color: #df6b57;">
                                 成果展示</a>
                         </li>
                         <li>
@@ -211,7 +200,7 @@
                                 著作专利</a>
                         </li>
                         <li>
-                            <a href="../team_member/team_member.html">
+                            <a href="" >
                                 团队成员</a>
                         </li>
                         <li>
@@ -334,39 +323,56 @@
                 </div>
             </div>
         </div>
+        <!-- 主页面 -->
         <div>
             <div>
                 <p class="weizhi">当前位置：<a href="../index.html" style="color:rgb(114,114,114);">周晓君的个人主页</a> &nbsp; >>
                     &nbsp; <a href="./result_show.html" style="color:rgb(114,114,114);">成果展示</a></p>
             </div>
-            <div style="height: 80px; width: 160px; line-height: 80px;text-align: center;">
-                <h2>成果展示</h2>
+            <!--[1]智能优化状态转移算法 -->
+            <div id="fangshuang">
+                <p class="zhengwenduanluo"><strong>智能优化状态转移算法</strong></p>
+                <p class="zhengwenduanluo"><strong>发布时间：</strong>2020-05-01</p>
+                <p class="zhengwenduanluo">
+                    <span id="busuanzi_container_site_pv">
+                        <strong>点击次数：</strong> <span id="busuanzi_value_site_pv"> </span> 次
+                    </span>
+                </p>
+                <p class="zhengwenduanluo">状态转移算法简介：</p>
+                <div style="margin-top: 50px;">
+                    <p class="zhengwenduanluo">背景：</p>
+                    <p class="zhengwenduanluo">
+                        自上世纪70年代美国密歇根大学约翰·霍兰德教授最早提出的遗传算法以来，以遗传算法为代表的智能优化算法得到了长足的发展，涌现了诸如模拟退火、蚁群算法、粒子群优化等众多新型智能优化算法，正在成为智能科学、信息科学、人工智能中最为活跃的研究方向，并在诸多工程领域得到迅速推广和应用。目前大多数智能优化算法都是以行为主义模仿学习为主，通过模拟自然界鸟群、蜂群、鱼群等生物进化来求解复杂优化问题。然而，基于行为主义的智能优化算法主要是模仿，碰到什么就模仿学习什么，过于机械，带有很大的盲从性，没有深刻反映出最优化算法的本质、目的和要求。一方面，这种基于模仿表象学习的方法造成算法的可扩展性差，大多数智能优化算法在某些问题上低维时表现良好，维度变高时效果显著恶化；另一方面，它使得算法容易出现诸如停滞或早熟收敛等怪异现象，即算法可能停滞在任意随机点，而不是数学意义上的最优解。为了消除已有智能优化算法容易陷入停滞怪象、提高算法的可扩展性和拓宽智能优化算法的应用范围，周晓君博士于2012年原创性地提出了一种基于结构化学习的新型智能优化算法——状态转移算法。
+                    </p>
+                </div>
+                <div style="margin-top: 50px;">
+                    <p class="zhengwenduanluo">原理：</p>
+                    <p class="zhengwenduanluo">
+                        状态转移算法是一种基于结构化学习的智能型随机性全局优化算法，它抓住最优化算法的本质、目的和要求，以全局性、最优性、快速性、收敛性、可控性五大核心结构要素为体系框架。它的基本思想是将最优化问题的一个解看成是一个状态，解的迭代更新过程看成是状态转移过程，利用现代控制理论中的离散时间状态空间表达式来作为产生候选解的统一框架，基于此框架来设计状态变换算子。与大多数基于种群的进化算法不同，标准的状态转移算法是一种基于个体的进化算法，它基于给定当前解，通过采样方式，多次独立运行某种状态变换算子产生候选解集，并与当前解进行比较，迭代更新当前解，直到满足某种终止条件。值得一提的是，状态转移算法中的每种状态变换算子都能够产生具有规则形状、可控大小的几何邻域，它设计了包括旋转变换、平移变换、伸缩变换、坐标轴搜索等不同的状态变换算子以满足全局搜索、局部搜索以及启发式搜索等功能需要，并且以交替轮换的方式适时地使用各种不同算子，使得状态转移算法能够在概率意义上很快找到全局最优解。
+                    </p>
+                </div>
+                <div style="margin: 0 auto; width: 50%;">
+                    <img src="../images/result_show/2mmUFrviuqEv.gif" alt=""  class="img_result_show">
+                </div>
+                
+                <div style="margin-top: 50px;">
+                    <p class="zhengwenduanluo">智能优化算法对比</p>
+                    <p class="zhengwenduanluo">
+                        通过常见的标准测试函数Rastrigin函数，下面展示了标准状态转移算法STA与其它智能优化算法，包括人工蜂群算法（ABC）、粒子群优化算法（CLPSO）、差分进化算法（SaDE）和遗传算法（RCGA）在该函数上寻优性能对比。可以看出，跟先进的遗传算法、粒子群优化算法、差分进化算法等智能优化算法相比，状态转移算法具有全局搜索能强、寻优速度快、扩展性好、可控性高等显著优点。
+                    </p>
+                </div>
+                <div  style="margin: 0 auto; width: 70%;">
+                    <img src="../images/result_show/E36R3u6bYBFj.gif" alt="" class="img_result_show">
+                </div>
             </div>
-
-            <div>
-                <table class="tbDatalist">
-                    <tr>
-                        <td>
-                            <a href="./1_result_show.html"> [1] 智能优化状态转移算法</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="./2_result_show.html"> [2] 流程工业智能优化控制</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="./3_result_show.html"> [3] 工业智能视觉监控</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="./4_result_show.html"> [4] 复杂网络社区发现</a>
-                        </td>
-                    </tr>
-                </table>
+            <div style="margin-top : 10px">
+                <p class="zhengwenduanluo"><a href="./2_result_show.html">下一条：流程工业智能优化控制</a></p>
             </div>
+            <!--[2]流程工业智能优化控制 -->
+            
+            <!-- [3]工业智能视觉监控 -->
+           
+            <!--	[4]复杂网络社区发现 -->
         </div>
         <div class="copyright" style="border-top: 1px dotted #9e9e9e;margin-top: 50px;clear: both; text-align: center;">
             <div style="height: 60px;line-height: 60px;">
@@ -404,6 +410,15 @@
             document.getElementById("sitetime").innerHTML = "🕓xiaojun zhou's homepage 已开通 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; //此处为显示的内容
         }
         siteTime();
+    </script>
+    <script>
+        function getSearchString(key) {
+            var str = window.location.search;
+            str = str.substring(1, str.length);
+            var showblock = document.getElementById(str)
+            showblock.classList.remove("noshow")
+        }
+        getSearchString();
     </script>
 </body>
 
