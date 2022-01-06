@@ -258,3 +258,13 @@ position: relative;
 	/* 鼠标移上去时，反转颜色 */
 	color: #fff;
   }
+
+  .weizhi {
+	margin-right: 50px;
+	margin-top: 20px;
+	text-align: right;
+}
+ a{
+	 color: #000;
+
+}
