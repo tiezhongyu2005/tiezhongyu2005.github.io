@@ -35,16 +35,32 @@
             background-color: #f0f0f0;
         }
 
-        .studentimgsizedetail {
-            width: 230px;
-            height: 322px;
-
+        .studentimgsize {
+            width: 114px;
+            height: 160px;
+            margin: 20px 50px;
         }
 
         .ketizujingshen {
             width: 200px;
             height: 160px;
             margin: 20px 0px;
+
+        }
+
+        .tbDatalist {
+            width: 100%;
+        }
+
+        .tbDatalist tr {
+            height: 40px;
+            width: 100%;
+        }
+
+        .tbDatalist td {
+            width: 100%;
+            margin-left: 40px;
+            padding-left: 40px;
         }
 
         .zhengwenduanluo {
@@ -53,8 +69,10 @@
             line-height: 35px;
         }
 
-        .img_result_show {
-            width: 100%;
+
+
+        .tbDatalist tr:hover {
+            background: rgb(190, 189, 189);
         }
     </style>
 
@@ -169,7 +187,7 @@
                             <a href="../index.html"> 首页</a>
                         </li>
                         <li>
-                            <a href="../result_show/result_show.html" style="background-color: #df6b57;">
+                            <a href="../result_show/result_show.html">
                                 成果展示</a>
                         </li>
                         <li>
@@ -196,11 +214,11 @@
                                 科研项目</a>
                         </li>
                         <li>
-                            <a href="../Works_of_patent/Works_of_patent.html">
+                            <a href="#" style="background-color: #df6b57;">
                                 著作专利</a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="../team_member/team_member.html">
                                 团队成员</a>
                         </li>
                         <li>
@@ -323,95 +341,27 @@
                 </div>
             </div>
         </div>
-        <!-- 主页面 -->
         <div>
             <div>
                 <p class="weizhi">当前位置：<a href="../index.html" style="color:rgb(114,114,114);">周晓君的个人主页</a> &nbsp; >>
-                    &nbsp; <a href="./result_show.html" style="color:rgb(114,114,114);">成果展示</a></p>
+                    &nbsp; <a href="./Works_of_patent.html" style="color:rgb(114,114,114);">著作专利</a></p>
             </div>
-            <!--[4]复杂网络社区发现 -->
+
             <div>
-                <p class="zhengwenduanluo"><strong>复杂网络社区发现</strong></p>
-                <p class="zhengwenduanluo"><strong>发布时间：</strong>2020-07-07</p>
+                <p class="zhengwenduanluo"><strong>一种分数阶PID控制器参数优化整定方法</strong></p>
+                <p class="zhengwenduanluo"><strong>发布时间：</strong> 2019-12-15 </p>
                 <p class="zhengwenduanluo">
                     <span id="busuanzi_container_page_pv">
                         <strong> 点击次数：</strong><span id="busuanzi_value_page_pv"></span>次
                     </span>
                 </p>
-                <!-- <p class="zhengwenduanluo">状态转移算法简介：</p> -->
-                <div style="margin-top: 50px;">
-                    <p class="zhengwenduanluo">背景：</p>
-                    <p class="zhengwenduanluo">
-                        社区发现指的是将复杂网络中的所有节点划分为多个节点集合，从而使得集合内部的节点连接紧密，而集合之间的节点连接疏松的过程，也被称为网络聚类。它对于分析复杂网络的拓扑结构、理解复杂网络的功能、发现复杂网络中的隐藏规律和预测复杂网络的行为有着非常重要的理论意义，同时也可应用于各种社交网络个性化推荐系统的性能提升、传染病网络的风险预测等众多领域。社区发现问题在各个领域研究人员的持续探索下取得了一些发展，目前涌现了各式各样的社区发现算法。其中，基于智能优化算法的社区发现方法由于具有不需要提前给定网络中的社区个数，可以将专业领域的知识嵌入到算法的设计中等优点，近年来发展尤为迅速。然而，目前已有的基于智能优化算法的社区发现方法在求解精度和稳定性上仍然有待进一步提高，本研究目的是提出高精度、高稳定性的复杂网络社区发现方法，以满足实际社区发现任务的需要。
-                    </p>
-                </div>
-                <!-- <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/mqaMNjeiURBj.png" alt=""  class="img_result_show">  
-                    </div>
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/3iuEZ3IFVVBv.png" alt=""  class="img_result_show">
-                    </div>
-                </div> -->
-
-                <div style="margin-top: 50px;">
-                    <p class="zhengwenduanluo">方法：</p>
-                    <p class="zhengwenduanluo">
-                        针对已有的社区发现算法在求解精度和稳定性上的不足，本研究提出了一种基于双层变换离散状态转移算法的复杂网络社区发现方法（MDSTA）。该算法主要包括种群初始化和进化、精英解种群的生成和局部搜索三个部分。为了保证算法的寻优性能，算法首先采用了基于标签传播的复杂网络社区结构初始化策略，接着利用离散状态变换算子对种群个体质量进行优化。具体地，算法分别设计了节点标签替换变换算子和社区标签替换变换算子这两种不同层次的社区发现算子进行全局寻优操作。同时，为增强算法的局部搜索寻优能力，该算法利用种群中质量较优的个体组成了精英种群集合，并通过在精英种群个体中进行交叉操作以产生更高质量的个体。
-                    </p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/mQ3Qbm3UjEzu.jpg" alt="" class="img_result_show">
-                    </div>
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/JBvmyijyuQzu.jpg" alt="" class="img_result_show">
-                    </div>
-                </div>
-
-                <div style="margin-top: 50px;">
-                    <p class="zhengwenduanluo">结果：</p>
-                    <p class="zhengwenduanluo">
-                        本算法与一些性能较好的社区发现算法，包括Louvain算法、GN算法、标签传播算法（LPA）、Danon算法、遗传算法（GA）、多目标遗传算法（MOGA）在GN人工生成复杂网络和多个现实世界复杂网络上进行了对比实验。下图是实验后所得的数据展示，其中指标值越接近于1表示算法效果越好。可以看出，本算法与其它对比算法相比具有更高的求解精度和稳定性。
-                    </p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/result_show/AvmyAnaAj2Af.jpg" alt="" class="img_result_show">
-                    </div>
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/result_show/e6jEZbqemye2.jpg" alt="" class="img_result_show">
-                    </div>
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/result_show/fyAnMnm677zm.jpg" alt="" class="img_result_show">
-                    </div>
-                </div>
-                <div style="margin-top: 50px;">
-                    <p class="zhengwenduanluo">
-                        下图是本算法对于大学生橄榄球比赛网络（Football）和美国政治家书籍网络（Polbooks）进行社区发现所得的可视化结果展示。
-                    </p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/VfyUvezAJjuy.jpg" alt="" class="img_result_show">
-                    </div>
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/result_show/FJ3A7vveMJRv.jpg" alt="" class="img_result_show">
-                    </div>
-                </div>
-
+                <p class="zhengwenduanluo"><strong>简介：</strong> 专利号：ZL 2016 1 1139039.7 </p>
+                <p class="zhengwenduanluo"><strong>学校署名：</strong> 中南大学 </p>
+                <p class="zhengwenduanluo"><strong>第一作者：</strong> 桂卫华, 阳春华, 张凤雪, 周晓君 </p>
+                <p class="zhengwenduanluo"><strong>著作类别：</strong> 专利 </p>
+                <p class="zhengwenduanluo"><strong>学科门类：</strong> 控制科学与工程 </p>
+                <p class="zhengwenduanluo"><strong>是否译成外文：</strong> 否</p>
             </div>
-            <div style="margin-top : 10px">
-                <p class="zhengwenduanluo"><a href="./3_result_show.html">上一条：工业智能视觉监控</a></p>
-            </div>
-            <!-- <div style="margin-top : 10px">
-                <p class="zhengwenduanluo">下一条：工业智能视觉监控</p>
-            </div> -->
-            <!--[2]流程工业智能优化控制 -->
-
-            <!-- [3]工业智能视觉监控 -->
-
-            <!--	[4]复杂网络社区发现 -->
         </div>
         <div class="copyright" style="border-top: 1px dotted #9e9e9e;margin-top: 50px;clear: both; text-align: center;">
             <div style="height: 60px;line-height: 60px;">
@@ -449,15 +399,6 @@
             document.getElementById("sitetime").innerHTML = "🕓xiaojun zhou's homepage 已开通 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; //此处为显示的内容
         }
         siteTime();
-    </script>
-    <script>
-        function getSearchString(key) {
-            var str = window.location.search;
-            str = str.substring(1, str.length);
-            var showblock = document.getElementById(str)
-            showblock.classList.remove("noshow")
-        }
-        getSearchString();
     </script>
 </body>
 
