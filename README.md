@@ -1,2 +1,2 @@
 # tiezhongyu2005.github.io
-this is xiaojun zhou's homepage
+this is Xiaojun Zhou's homepage
