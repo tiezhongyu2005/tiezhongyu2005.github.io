@@ -169,7 +169,8 @@
                             <a href="../index.html"> 首页</a>
                         </li>
                         <li>
-                            <a href="../achievement_display/achievement_display.html"  style="background-color: #df6b57;">
+                            <a href="../achievement_display/achievement_display.html"
+                                style="background-color: #df6b57;">
                                 成果展示</a>
                         </li>
                         <li>
@@ -200,7 +201,7 @@
                                 著作专利</a>
                         </li>
                         <li>
-                            <a href="../group/group.html" >
+                            <a href="../group/group.html">
                                 团队成员</a>
                         </li>
                         <li>
@@ -342,28 +343,35 @@
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">背景：</p>
                     <p class="zhengwenduanluo">
-                        泡沫浮选是世界范围内应用最为广泛的选矿方法之一，我国 90% 以上的有色金属选矿都应用了该方法。泡沫浮选过程中，泡沫浮选是以表面化学为基础，根据矿物表面润湿性的不同来分选矿物的分离方法。但是由于浮选过程工艺流程长，内部机理不明确，没有通用的机理模型，浮选相关工艺指标检测难度大等原因，目前浮选过程中通常依靠经验丰富的工人观察浮选槽中的表面泡沫状态来完成现场操作。然而这种依赖人工肉眼观察的方法主观性强，难以实现浮选工况的客观判断，容易造成工况波动频繁，导致生产效益低下的情况。因此需要一种更为客观的方法实现工况的识别，近些年迅猛发展的机器视觉方法为此提供可很好的解决途径。使用基于机器视觉的工况识别方法需要使用到浮选泡沫图像的相关特征，目前众多学者为此根据各自的研究提出了众多浮选泡沫的特征。但这些特征中很有可能包含对于工况识别无关的、冗余的或是噪声的特征，这些特征会影响工矿识别的准确率，因此需要引入特征选择方法以解决这个问题。
+                        泡沫浮选是世界范围内应用最为广泛的选矿方法之一，我国 90%
+                        以上的有色金属选矿都应用了该方法。泡沫浮选过程中，泡沫浮选是以表面化学为基础，根据矿物表面润湿性的不同来分选矿物的分离方法。但是由于浮选过程工艺流程长，内部机理不明确，没有通用的机理模型，浮选相关工艺指标检测难度大等原因，目前浮选过程中通常依靠经验丰富的工人观察浮选槽中的表面泡沫状态来完成现场操作。然而这种依赖人工肉眼观察的方法主观性强，难以实现浮选工况的客观判断，容易造成工况波动频繁，导致生产效益低下的情况。因此需要一种更为客观的方法实现工况的识别，近些年迅猛发展的机器视觉方法为此提供可很好的解决途径。使用基于机器视觉的工况识别方法需要使用到浮选泡沫图像的相关特征，目前众多学者为此根据各自的研究提出了众多浮选泡沫的特征。但这些特征中很有可能包含对于工况识别无关的、冗余的或是噪声的特征，这些特征会影响工矿识别的准确率，因此需要引入特征选择方法以解决这个问题。
                     </p>
                 </div>
                 <div style="display: flex;">
                     <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/QNZfm27vmyEv.png" alt=""  class="img_achievement_display">  
+                        <img src="../images/achievement_display/QNZfm27vmyEv.png" alt=""
+                            class="img_achievement_display">
                     </div>
                     <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/nArYJrAjamIf.png" alt=""  class="img_achievement_display">
+                        <img src="../images/achievement_display/nArYJrAjamIf.png" alt=""
+                            class="img_achievement_display">
                     </div>
                 </div>
-                
+
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">原理：</p>
                     <p class="zhengwenduanluo">
-                        特征选择旨在从原始特征集中找到一个拥有最大相关度和最小冗余度的特征子集以提高后续学习算法的性能。它可以为泡沫浮选过程的工况识别带来两个好处：1）它选出了最为有效的特征可以提升识别的准确率；2)它移除了冗余的和不相关的特征，简化了学习模型，节省了模型的训练时间。但是如何获取最优的特征子集仍是一个十分艰巨的挑战。因为对于一个有 n 个特征的特征子集，总计有 2n 种子集可能性，如果 n 过大的话，从中找到最优的特征子集会耗费巨大的计算代价。考虑到现有特征选择方法存在的各种问题，本研究提出了一种基于mRMR及二值状态转移算法的混合特征选择方法（mRMR-BSTA）。该方法结合了过滤式方法计算量小、耗时少，以及包裹式方法高准确性的优点，由两个部分组成：1)基于mRMR的过滤式方法部分；2)基于二值状态转移算法的包裹式方法部分。其中过滤式部分主要起到了以下作用：1)根据 mRMR 准则对所有的特征进行了排序；2) 为后续的包裹式部分提供特征的权重信息；3) 剔除了一部分无关的或冗余的特征值，减少了后续包裹式部分候选解的维度与搜索空间，有效地降低了所需时间。而包裹式部分会根据过滤式部分所提供的特征权重，采用基于特征权重的初始化方法给出初始状态，然后结合二值状态转移算法作为搜索策略，对剩余的特征进行更进一步的选择，最终选出最优的特征子集。
+                        特征选择旨在从原始特征集中找到一个拥有最大相关度和最小冗余度的特征子集以提高后续学习算法的性能。它可以为泡沫浮选过程的工况识别带来两个好处：1）它选出了最为有效的特征可以提升识别的准确率；2)它移除了冗余的和不相关的特征，简化了学习模型，节省了模型的训练时间。但是如何获取最优的特征子集仍是一个十分艰巨的挑战。因为对于一个有
+                        n 个特征的特征子集，总计有 2n 种子集可能性，如果 n
+                        过大的话，从中找到最优的特征子集会耗费巨大的计算代价。考虑到现有特征选择方法存在的各种问题，本研究提出了一种基于mRMR及二值状态转移算法的混合特征选择方法（mRMR-BSTA）。该方法结合了过滤式方法计算量小、耗时少，以及包裹式方法高准确性的优点，由两个部分组成：1)基于mRMR的过滤式方法部分；2)基于二值状态转移算法的包裹式方法部分。其中过滤式部分主要起到了以下作用：1)根据
+                        mRMR 准则对所有的特征进行了排序；2) 为后续的包裹式部分提供特征的权重信息；3)
+                        剔除了一部分无关的或冗余的特征值，减少了后续包裹式部分候选解的维度与搜索空间，有效地降低了所需时间。而包裹式部分会根据过滤式部分所提供的特征权重，采用基于特征权重的初始化方法给出初始状态，然后结合二值状态转移算法作为搜索策略，对剩余的特征进行更进一步的选择，最终选出最优的特征子集。
                     </p>
                 </div>
                 <div style="margin: 10px auto; width: 35%;">
-                    <img src="../images/achievement_display/InaYnaAnqqEz.png" alt=""  class="img_achievement_display">
+                    <img src="../images/achievement_display/InaYnaAnqqEz.png" alt="" class="img_achievement_display">
                 </div>
-                
+
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">实验结果：</p>
                     <p class="zhengwenduanluo">
@@ -371,14 +379,16 @@
                     </p>
                 </div>
                 <div style="margin: 10px auto; width: 40%;">
-                    <img src="../images/achievement_display/jm2EviJ7vyMn.png" alt=""  class="img_achievement_display">  
+                    <img src="../images/achievement_display/jm2EviJ7vyMn.png" alt="" class="img_achievement_display">
                 </div>
                 <div style="display: flex;">
                     <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/FFrMJzfuuEZz.png" alt=""  class="img_achievement_display">  
+                        <img src="../images/achievement_display/FFrMJzfuuEZz.png" alt=""
+                            class="img_achievement_display">
                     </div>
                     <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/Bv2qQzZJnIfm.png" alt=""  class="img_achievement_display">
+                        <img src="../images/achievement_display/Bv2qQzZJnIfm.png" alt=""
+                            class="img_achievement_display">
                     </div>
                 </div>
             </div>
@@ -389,9 +399,9 @@
                 <p class="zhengwenduanluo"><a href="./4_achievement_display.html">下一条：复杂网络社区发现</a></p>
             </div>
             <!--[2]流程工业智能优化控制 -->
-            
+
             <!-- [3]工业智能视觉监控 -->
-           
+
             <!--	[4]复杂网络社区发现 -->
         </div>
         <div class="copyright" style="border-top: 1px dotted #9e9e9e;margin-top: 50px;clear: both; text-align: center;">
@@ -440,6 +450,7 @@
         }
         getSearchString();
     </script>
+    <script src="../js/newYear_fu.js"></script>
 </body>
 
 </html>
