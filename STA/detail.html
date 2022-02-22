@@ -24,6 +24,11 @@
     <script type="text/javascript" src="../js/vsbscreen.min.js" id="_vsbscreen"></script>
     <!-- 不蒜子计数 -->
     <script type="text/javascript" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- 网页中能写公式的关键 -->
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script id="MathJax-script" src="https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -89,6 +94,14 @@
 
         .links:hover {
             background: rgb(219, 218, 218);
+        }
+
+        .suojin {
+            text-indent: 2em;
+        }
+
+        .erjisuojin {
+            text-indent: 4em;
         }
     </style>
 
@@ -631,10 +644,59 @@
                     <p class="zhengwenduanluo links"><a href="./detail.html?code">下一条：相关代码</a></p>
                 </div>
             </div>
-            <div  id="code" class="noshow">
-                <p class="zhengwenduanluo"><strong>相关论文</strong></p>
-                <p class="zhengwenduanluo"><strong>发布时间：</strong>2022-02-22</p>
-                <p class="zhengwenduanluo">待续。。</p>
+            <div id="code" class="noshow">
+                <div>
+                    <p class="zhengwenduanluo"><strong>相关代码</strong></p>
+                    <p class="zhengwenduanluo"><strong>发布时间：</strong>2022-02-22</p>
+                    <p class="zhengwenduanluo"><strong>MATLAB版相关代码下载</strong></p>
+                    <p class="zhengwenduanluo suojin">[1] 箱型约束状态转移算法</p>
+
+                    <p class="zhengwenduanluo erjisuojin">针对下列最优化问题 </p>
+                    <div>
+                        <p>
+                            \[\begin{align}
+                            & \min \quad f(x) \\
+                            & s.t.\quad \ \ {{l}_{b}}\le x\le {{u}_{b}} \\
+                            \end{align}\]
+
+                        </p>
+                    </div>
+                    <p class="zhengwenduanluo erjisuojin">基本连续状态转移算法 <a href="../resources/STA/BSTA.rar"
+                            style="color: blue;"> <img src="../images/icon_txt.png" alt=""> BSTA.rar</a> </p>
+                    <p class="zhengwenduanluo erjisuojin">参数最优连续状态转移算法 <a href="../resources/STA/POSTA.rar"
+                            style="color: blue;"> <img src="../images/icon_txt.png" alt=""> POSTA.rar</a> </p>
+
+                    <p class="zhengwenduanluo suojin">[2] 离散状态转移算法 <a href="../resources/STA/DSTA.rar"
+                            style="color: blue;"> <img src="../images/icon_txt.png" alt=""> Discrete_STA.rar</a></p>
+                    <p class="zhengwenduanluo erjisuojin">针对下列最优化问题 </p>
+                    <div>
+                        <p>
+                            \[\begin{align}
+                            & \min \quad f(x) \\
+                            & s.t.\quad \ \ x\in \{{{s}_{1}},{{s}_{2}},\cdots ,{{s}_{m}}\} \\
+                            \end{align}\]
+                        </p>
+                    </div>
+
+
+                    <p class="zhengwenduanluo"><strong>Python版相关代码下载</strong></p>
+                    <p class="zhengwenduanluo suojin">[1] 箱型约束状态转移算法</p>
+
+                    <p class="zhengwenduanluo erjisuojin">针对下列最优化问题 </p>
+                    <div>
+                        <p>
+                            \[\begin{align}
+                            & \min \quad f(x) \\
+                            & s.t.\quad \ \ {{l}_{b}}\le x\le {{u}_{b}} \\
+                            \end{align}\]
+
+                        </p>
+                    </div>
+                    <p class="zhengwenduanluo erjisuojin">基本连续状态转移算法 <a href="../resources/STA/STA_python.rar"
+                            style="color: blue;"> <img src="../images/icon_txt.png" alt="">STA_python.rar</a> </p>
+
+                </div>
+
 
                 <div style="margin-top : 60px">
                     <p class="zhengwenduanluo links"><a href="./detail.html?article">上一条：相关论文</a></p>
