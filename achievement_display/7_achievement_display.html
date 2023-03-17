@@ -336,7 +336,7 @@
             </div>
             <!--[4]复杂网络社区发现 -->
             <div>
-                <p class="zhengwenduanluo"><strong>复杂网络社区发现</strong></p>
+                <p class="zhengwenduanluo"><strong>医学图像自动分割</strong></p>
                 <p class="zhengwenduanluo"><strong>发布时间：</strong>2020-07-07</p>
                 <p class="zhengwenduanluo">
                     <span id="busuanzi_container_page_pv">
@@ -347,8 +347,14 @@
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">背景：</p>
                     <p class="zhengwenduanluo">
-                        社区发现指的是将复杂网络中的所有节点划分为多个节点集合，从而使得集合内部的节点连接紧密，而集合之间的节点连接疏松的过程，也被称为网络聚类。它对于分析复杂网络的拓扑结构、理解复杂网络的功能、发现复杂网络中的隐藏规律和预测复杂网络的行为有着非常重要的理论意义，同时也可应用于各种社交网络个性化推荐系统的性能提升、传染病网络的风险预测等众多领域。社区发现问题在各个领域研究人员的持续探索下取得了一些发展，目前涌现了各式各样的社区发现算法。其中，基于智能优化算法的社区发现方法由于具有不需要提前给定网络中的社区个数，可以将专业领域的知识嵌入到算法的设计中等优点，近年来发展尤为迅速。然而，目前已有的基于智能优化算法的社区发现方法在求解精度和稳定性上仍然有待进一步提高，本研究目的是提出高精度、高稳定性的复杂网络社区发现方法，以满足实际社区发现任务的需要。
+                        为了缓解我国医疗资源配置紧张现象，满足人民对医疗服务日益增长的需求，以医学图像为研究基础的智慧医疗领域已得到广泛关注和重视。2017年国务院发布的《新一代人工智能发展规划》中指出，应积极推广应用人工智能治疗新模式新手段，建立快速精准的智能医疗体系。医学图像可以较为真切地反映出人体内部组织结构的形态和功能信息，不同模态的医学图像成为人类感知和了解人体信息的重要载体，在医学图像处理过程中为获取相关人体器官功能指标发挥着重要的作用，其中图像分割是医学图像处理过程中的重要环节。医学图像的准确分割对病变区域的定位、定量、分析有着不可替代的作用，进而直接影响医生对疾病的诊断。而目前传统的医学图像分割方法人为参与度高、主观性强，且缺乏对医学图像的抗噪能力，往往得不到理想的分割效果。而基于深度学习的分割方法在历经多年快速发展后在医学图像分割领域取得了较好的应用，其中U-net语义分割网络模型依靠其结构简单、像素定位较为准确等特点成为最流行的语义分割网络。但将现有的U-net架构适用于特定的医学图像仍然是一项具有挑战性的任务，需要大量专业知识和时间来调整模型架构和参数。对此，神经网络架构的自动设计方法逐渐出现在我们的视线中，神经网络架构的自动优化设计可以大大减少人工调试设计网络的时间，并且对医学图像数据集有一定的通用性和鲁棒性。
                     </p>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin: 10px auto; width: 60%;">
+                        <img src="../images/achievement_display/yixuetuxiang1.png" alt=""
+                            class="img_achievement_display">
+                    </div>
                 </div>
                 <!-- <div style="display: flex;">
                     <div style="margin: 10px auto; width: 40%;">
@@ -362,16 +368,12 @@
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">方法：</p>
                     <p class="zhengwenduanluo">
-                        针对已有的社区发现算法在求解精度和稳定性上的不足，本研究提出了一种基于双层变换离散状态转移算法的复杂网络社区发现方法（MDSTA）。该算法主要包括种群初始化和进化、精英解种群的生成和局部搜索三个部分。为了保证算法的寻优性能，算法首先采用了基于标签传播的复杂网络社区结构初始化策略，接着利用离散状态变换算子对种群个体质量进行优化。具体地，算法分别设计了节点标签替换变换算子和社区标签替换变换算子这两种不同层次的社区发现算子进行全局寻优操作。同时，为增强算法的局部搜索寻优能力，该算法利用种群中质量较优的个体组成了精英种群集合，并通过在精英种群个体中进行交叉操作以产生更高质量的个体。
+                    针对U-net在面对不同分割任务时最优网络架构及超参数未知的问题，采用状态转移算法来搜索U-net最优架构。提出了一种基于离散状态转移算法的U-net架构优化方法，进化的体系架构有望使在解决不同任务时获得良好的分割性能。网络架构优化问题在于具有搜索空间大、网络超参数之间相互依赖性强、维度高等特点，离散状态转移算法作为新型的智能优化算法可有效地缓解上述问题。
                     </p>
                 </div>
                 <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/mQ3Qbm3UjEzu.jpg" alt=""
-                            class="img_achievement_display">
-                    </div>
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/JBvmyijyuQzu.jpg" alt=""
+                    <div style="margin: 10px auto; width: 60%;">
+                        <img src="../images/achievement_display/yixuetuxiang2.png" alt=""
                             class="img_achievement_display">
                     </div>
                 </div>
@@ -379,42 +381,20 @@
                 <div style="margin-top: 50px;">
                     <p class="zhengwenduanluo">结果：</p>
                     <p class="zhengwenduanluo">
-                        本算法与一些性能较好的社区发现算法，包括Louvain算法、GN算法、标签传播算法（LPA）、Danon算法、遗传算法（GA）、多目标遗传算法（MOGA）在GN人工生成复杂网络和多个现实世界复杂网络上进行了对比实验。下图是实验后所得的数据展示，其中指标值越接近于1表示算法效果越好。可以看出，本算法与其它对比算法相比具有更高的求解精度和稳定性。
+                        为了验证所提算法DSTA-Unet的性能，本文在LiTS肝脏数据集上进行实验。我们将所提方法(DSTA-Unet)和U-net、R2U-net等手动设计的网络进行了对比，同时也和基于神经架构搜索方法的NAS-Unet进行了比较，实验结果验证了所提方法的优越性。
                     </p>
                 </div>
                 <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/achievement_display/AvmyAnaAj2Af.jpg" alt=""
-                            class="img_achievement_display">
-                    </div>
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/achievement_display/e6jEZbqemye2.jpg" alt=""
-                            class="img_achievement_display">
-                    </div>
-                    <div style="margin: 10px auto; width: 30%;">
-                        <img src="../images/achievement_display/fyAnMnm677zm.jpg" alt=""
+                    <div style="margin: 10px auto; width: 60%;">
+                        <img src="../images/achievement_display/yixuetuxiang3.png" alt=""
                             class="img_achievement_display">
                     </div>
                 </div>
-                <div style="margin-top: 50px;">
-                    <p class="zhengwenduanluo">
-                        下图是本算法对于大学生橄榄球比赛网络（Football）和美国政治家书籍网络（Polbooks）进行社区发现所得的可视化结果展示。
-                    </p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/VfyUvezAJjuy.jpg" alt=""
-                            class="img_achievement_display">
-                    </div>
-                    <div style="margin: 10px auto; width: 40%;">
-                        <img src="../images/achievement_display/FJ3A7vveMJRv.jpg" alt=""
-                            class="img_achievement_display">
-                    </div>
-                </div>
+               
 
             </div>
             <div style="margin-top : 10px">
-                <p class="zhengwenduanluo"><a href="./3_achievement_display.html">上一条：工业智能视觉监控</a></p>
+                <p class="zhengwenduanluo"><a href="./5_achievement_display.html">上一条：复杂社区网络发现</a></p>
             </div>
             <!-- <div style="margin-top : 10px">
                 <p class="zhengwenduanluo">下一条：工业智能视觉监控</p>
